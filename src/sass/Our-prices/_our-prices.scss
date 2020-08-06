@@ -1,0 +1,127 @@
+.services-price {
+  background-image: url(../../images/Bg.jpg);
+  background-size: contain;
+}
+.master {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  padding-top: 84px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  &::before {
+    content: '';
+    width: 1px;
+    height: 60px;
+    display: block;
+    background: rgba(157, 164, 189, 0.6);
+    transform: rotate(90deg);
+    margin-left: 20px;
+  }
+}
+.heading {
+  font-family: Raleway;
+  font-style: $font-style;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 44px;
+}
+.work-money {
+  width: 418px;
+  min-height: 440px;
+  margin-bottom: 50px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.services {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  & + & {
+    margin-bottom: 20px;
+  }
+}
+.price1::before {
+  content: '';
+  width: 1px;
+  height: 145px;
+  transform: rotate(90deg);
+  background: rgba(157, 164, 189, 0.12);
+}
+.price2::before {
+  content: '';
+  width: 1px;
+  height: 149px;
+  transform: rotate(90deg);
+  background: rgba(157, 164, 189, 0.12);
+}
+.price3::before {
+  content: '';
+  width: 1px;
+  height: 336px;
+  transform: rotate(90deg);
+  background: rgba(157, 164, 189, 0.12);
+}
+.price4::before {
+  content: '';
+  width: 1px;
+  height: 91px;
+  transform: rotate(90deg);
+  background: rgba(157, 164, 189, 0.12);
+}
+.price5::before {
+  content: '';
+  width: 1px;
+  height: 144px;
+  transform: rotate(90deg);
+  background: rgba(157, 164, 189, 0.12);
+}
+.price6::before {
+  content: '';
+  width: 1px;
+  height: 119px;
+  transform: rotate(90deg);
+  background: rgba(157, 164, 189, 0.12);
+}
+.price7::before {
+  content: '';
+  width: 1px;
+  height: 74px;
+  transform: rotate(90deg);
+  background: rgba(157, 164, 189, 0.12);
+}
+.price8::before {
+  content: '';
+  width: 1px;
+  height: 89px;
+  transform: rotate(90deg);
+  background: rgba(157, 164, 189, 0.12);
+}
+.price-button {
+  width: 160px;
+  height: 40px;
+  border: 1px solid #ff6c00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding-bottom: 84px;
+}
+.online {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
