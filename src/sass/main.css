@@ -660,56 +660,33 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 84px;
-  padding-bottom: 84px;
-  background: #FFFFFF;
+  margin-top: 84px;
+  margin-bottom: 84px;
+  background: #e5e5e5;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 31px;
-  padding-right: 31px;
-}
-
-.section-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.section-name::before {
+  position: absolute;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.36;
+  line-height: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #303030;
 }
 
-.section-title::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
-  margin-right: 20px;
-}
-
-.h2.section-item {
+.section-title {
+  width: 330px;
+  height: 66px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 42px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 33px;
   letter-spacing: 0.05em;
   color: #303030;
-}
-
-.section-button {
-  background-color: #FFFFFF;
 }
 
 .list-team {
