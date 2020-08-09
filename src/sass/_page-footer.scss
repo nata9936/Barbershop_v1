@@ -38,18 +38,17 @@ img {
 }
 
 .footer-container {
-  max-width: 480px;
-  max-height: 1191px;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 /* left container */
 
 .left-container {
-  max-width: 480px;
-  max-height: 557px;
+  border: none;
 
   .footer-title {
-    width: 418px;
     height: 49px;
     font-family: Raleway;
     font-style: normal;
@@ -60,14 +59,22 @@ img {
     letter-spacing: 0.05em;
     color: #ffffff;
     padding: 84px 31px 44px;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      padding: 100px 40px 44px;
+    }
   }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-field input,
 .form-field textarea {
-  display: block;
-  width: 418px;
-  flex-direction: column;
+  // width: 418px;
   background-color: #191c26;
   font-family: Open Sans;
   font-style: normal;
@@ -100,16 +107,18 @@ textarea {
   color: #ffffff;
   border: none;
   border-bottom: 1px solid #ffffff;
+  outline: none;
 }
 
 .send-button {
+  display: block;
+  margin: auto;
   width: 160px;
   height: 40px;
   border: 1px solid #ff6c00;
   box-sizing: border-box;
   border-radius: 25px;
   background-color: #191c26;
-  margin: 0px 160px 96px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -117,12 +126,12 @@ textarea {
   &:hover,
   &:focus {
     background: #ff6c00;
-    box-sizing: border-box;
+    outline: none;
   }
 }
 
 .send-text {
-  width: 84px;
+  // width: 84px;
   height: 16px;
   font-family: Open Sans;
   font-style: normal;
@@ -138,13 +147,9 @@ textarea {
 /* Right container */
 
 .right-container {
-  max-width: 480px;
-  max-height: 496px;
 }
 
 .overlay {
-  max-width: 480px;
-  max-height: 496px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -159,8 +164,8 @@ textarea {
 }
 
 .right-container .footer-contacts {
-  width: 418px;
-  height: 49px;
+  // width: 418px;
+  // height: 49px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -181,34 +186,70 @@ textarea {
   text-decoration: none;
   color: #9da4bd;
 
-  .map-svg,
-  .mail-svg,
-  .phone-svg {
-    color: #9da4bd;
-    fill: #9da4bd;
-    margin-right: 16px;
+  &:hover {
+    color: #ff6c00;
+    outline: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  &:focus {
+    color: #ff6c00;
+    outline: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
 
-  .contacts-text {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.66;
-    /* identical to box height, or 167% */
-    letter-spacing: 0.02em;
-    color: #9da4bd;
-    padding-left: 16px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.contacts-items .contacts-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.66;
+  /* identical to box height, or 167% */
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  padding-left: 16px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    color: #ff6c00;
+    outline: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus {
+    color: #ff6c00;
+    outline: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contacts-items .map-svg,
+.mail-svg,
+.phone-svg {
+  color: #9da4bd;
+  fill: #9da4bd;
+  margin-right: 16px;
+
+  &:hover {
+    color: #ff6c00;
+    outline: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus {
+    color: #ff6c00;
+    outline: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 .working-hours-container {
   display: flex;
-  padding: 0px 240px 20px 31px;
+  padding: 0px 270px 20px 31px;
 }
 
 .working-hours-title {
+  display: flex;
+  align-items: center;
+
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -219,19 +260,20 @@ textarea {
   text-transform: uppercase;
   color: #ffffff;
   padding-top: 40px;
+  padding-bottom: 20px;
 
   &::before {
-    display: inline-block;
-    background-image: url(../images/Rectangle5.svg);
+    display: block;
     content: ' ';
     width: 60px;
     height: 1px;
-    background: rgba(157, 164, 189, 0.4);
+    background-color: rgba(157, 164, 189, 0.4);
+    margin-right: 20px;
+    margin-left: 31px;
   }
 }
 
 .working-hours-item {
-  width: 330px;
   height: 30px;
   font-family: Open Sans;
   font-style: normal;
@@ -247,19 +289,17 @@ textarea {
 /* Underground */
 
 .copyright-container {
-  max-width: 480px;
   background-color: #f7f7f7;
 }
 
-.copyright-links-list {
+.copyright-list {
   display: flex;
+  list-style-type: none;
   justify-content: flex-end;
 }
 
-.copyright-instagram {
+.copyright-list .copyright-item {
   text-decoration: none;
-  width: 72px;
-  height: 15px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -267,28 +307,54 @@ textarea {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
-  padding: 44px 0px 79px 0px;
+  padding-top: 40px;
+}
+
+.copyright-link-instagram {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  color: #303030;
+  &:hover {
+    color: #ff6c00;
+    outline: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus {
+    color: #ff6c00;
+    outline: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
   &::before {
-    background-image: url(../images/Rectangle4.svg);
+    display: block;
+
     content: ' ';
     width: 60px;
     height: 1px;
-    background: #303030;
+    background-color: #303030;
+    margin-right: 40px;
   }
 }
 
-.copyright-youtube {
+.copyright-link-youtube {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.2em;
+  margin-left: 40px;
+  padding-right: 31px;
   color: #303030;
-  padding: 44px 31px 79px 40px;
-  margin-right: 0px;
+  &:hover {
+    color: #ff6c00;
+    outline: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus {
+    color: #ff6c00;
+    outline: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .copyright-text {
@@ -299,13 +365,5 @@ textarea {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
-}
-
-.copyright-links-list .copyright-link {
-  text-decoration: none;
-}
-
-.footer {
-  max-width: 1280px;
-  background-color: #191c26;
+  padding: 79px 0px 44px 31px;
 }
