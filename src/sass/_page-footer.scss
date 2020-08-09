@@ -41,35 +41,60 @@ img {
   margin: 0;
   padding: 0;
   border: none;
+  // width: 480px;
+  // height: 1053px;
+  @media screen and (min-width: 767px) {
+    width: 767px;
+  }
+}
+
+.footer-title {
+  margin-left: auto;
+  margin-right: auto;
+  height: 49px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  padding: 84px 31px 44px;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0px 44px 40px;
+    text-align: left;
+  }
 }
 
 /* left container */
 
 .left-container {
+  margin: 0;
+  padding: 0;
   border: none;
-
-  .footer-title {
-    height: 49px;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #ffffff;
-    padding: 84px 31px 44px;
-
-    @media screen and (min-width: 768px) {
-      display: block;
-      padding: 100px 40px 44px;
-    }
-  }
+  // width: 480px;
+  // height: 557px;
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 39px;
+    margin-bottom: 100px;
+  }
+
+  @media screen {
+    .additional-field {
+      width: 330px;
+      display: block;
+      flex-wrap: wrap;
+      flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+  }
 }
 
 .form-field input,
@@ -112,7 +137,8 @@ textarea {
 
 .send-button {
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 160px;
   height: 40px;
   border: 1px solid #ff6c00;
@@ -127,6 +153,11 @@ textarea {
   &:focus {
     background: #ff6c00;
     outline: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 39px;
+    margin-bottom: 100px;
   }
 }
 
@@ -147,6 +178,15 @@ textarea {
 /* Right container */
 
 .right-container {
+  margin: 0;
+  padding: 0;
+  border: none;
+  // width: 480px;
+  // height: 496px;
+
+  @media screen and (min-width: 768px) {
+    height: 768px;
+  }
 }
 
 .overlay {
@@ -163,7 +203,7 @@ textarea {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.right-container .footer-contacts {
+.footer-contacts {
   // width: 418px;
   // height: 49px;
   font-family: Raleway;
@@ -175,10 +215,33 @@ textarea {
   letter-spacing: 0.05em;
   color: #ffffff;
   padding: 84px 31px 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 420px;
+    padding-left: 39px;
+    padding-top: 100px;
+    text-align: left;
+  }
 }
 
-.contacts-list .contacts-items {
-  padding: 0px 31px 20px;
+.footer-contacts .contacts-list {
+  @media (min-width: 768px) {
+    width: 330px;
+    height: 160px;
+  }
+}
+
+.contacts-items {
+  padding: 0px 0px 20px 31px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 39px;
+    &:last-child {
+      padding-bottom: 100px;
+    }
+  }
 }
 
 .contacts-items .contacts-link {
@@ -227,7 +290,7 @@ textarea {
 .phone-svg {
   color: #9da4bd;
   fill: #9da4bd;
-  margin-right: 16px;
+  justify-content: center;
 
   &:hover {
     color: #ff6c00;
@@ -242,8 +305,7 @@ textarea {
 }
 
 .working-hours-container {
-  display: flex;
-  padding: 0px 270px 20px 31px;
+  margin: 0px;
 }
 
 .working-hours-title {
@@ -290,6 +352,8 @@ textarea {
 
 .copyright-container {
   background-color: #f7f7f7;
+  // width: 480px;
+  // height: 138px;
 }
 
 .copyright-list {
@@ -365,5 +429,5 @@ textarea {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
-  padding: 79px 0px 44px 31px;
+  padding: 21px 0px 44px 31px;
 }
