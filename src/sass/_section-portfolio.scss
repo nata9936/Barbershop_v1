@@ -1,10 +1,93 @@
-// .container-portfolio {
-//   width: 1280px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.portfolio {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
-// .portfolio-list {
-//   display: flex;
-//   list-style: none;
-// }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+  ​ &::before {
+    position: absolute;
+    top: 91px;
+    left: 31px;
+    display: block;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+
+    @media screen and (min-width: 768px) {
+      left: 39px;
+      top: 107px;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 55px;
+      top: 137px;
+    }
+  }
+}
+​ ​ ​ .portfolio-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #303030;
+  padding-top: 84px;
+  padding-left: 111px;
+  margin: 0;
+  margin-bottom: 44px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-left: 119px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+    padding-left: 135px;
+  }
+}
+​ .portfolio-list {
+  list-style: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    margin: 0;
+    margin-left: 16px;
+  }
+}
+.img-portfolio {
+  width: 418px;
+  margin-left: -8px;
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 270px;
+    margin: 0;
+  }
+}
+​ .item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.item + .item {
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+  }
+}
