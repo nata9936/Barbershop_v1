@@ -1,5 +1,7 @@
 .services-price {
-  background-image: url('../../images/img.jpg');
+  position: relative;
+
+  background-image: url('../images/img.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14,16 +16,21 @@
   letter-spacing: 0.1em;
   padding-top: 84px;
   margin-bottom: 20px;
+  margin-left: 111px;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
   &::before {
+    position: absolute;
     content: '';
+    top: 0;
+    left: 0;
     width: 60px;
     height: 1px;
-    display: block;
-    background: rgba(157, 164, 189, 0.6);
+
+    margin-top: 91px;
     margin-left: 31px;
-    margin-right: 20px;
+
+    background: rgba(157, 164, 189, 0.6);
   }
 }
 .heading {
