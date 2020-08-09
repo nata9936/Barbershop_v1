@@ -1368,10 +1368,32 @@ img {
 }
 
 .services-price {
-  background-image: url("../../images/img.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("../../images/img.jpg");
+  background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../../images/img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .services-price {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 38, 38, 0.5)), to(rgba(25, 38, 38, 0.5))), url("./img/img19.jpg");
+    background-image: linear-gradient(to right, rgba(25, 38, 38, 0.5), rgba(25, 38, 38, 0.5)), url("./img/img19.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .services-price {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 38, 38, 0.5)), to(rgba(25, 38, 38, 0.5))), url("./img/img21.jpg");
+    background-image: linear-gradient(to right, rgba(25, 38, 38, 0.5), rgba(25, 38, 38, 0.5)), url("./img/img21.jpg");
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .services-price {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 38, 38, 0.5)), to(rgba(25, 38, 38, 0.5))), url("./img/img24.jpg");
+    background-image: linear-gradient(to right, rgba(25, 38, 38, 0.5), rgba(25, 38, 38, 0.5)), url("./img/img24.jpg");
+  }
 }
 
 .master {
