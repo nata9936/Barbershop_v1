@@ -241,9 +241,6 @@ textarea {
     margin: 0px;
     padding: 0px;
   }
-}
-
-.overlay {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -544,4 +541,12 @@ textarea {
     width: 200px;
     display: inline-block;
   }
+}
+
+.copyright-links-list .copyright-link {
+  text-decoration: none;
+}
+.footer {
+  max-width: 1280px;
+  background-color: #191c26;
 }
