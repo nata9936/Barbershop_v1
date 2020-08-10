@@ -1,6 +1,5 @@
-
-  .services-price {
-    position: relative;
+.services-price {
+  position: relative;
   background-image: linear-gradient(
       to right,
       rgba(25, 28, 38, 0.2),
@@ -20,7 +19,7 @@
         rgba(25, 38, 38, 0.5),
         rgba(25, 38, 38, 0.5)
       ),
-      url('./img/img19.jpg');
+      url('../../images/img19.jpg');
   }
   @media screen and (min-width: 768px) {
     @media screen and (min-device-pixel-ratio: 2),
@@ -33,7 +32,7 @@
           rgba(25, 38, 38, 0.5),
           rgba(25, 38, 38, 0.5)
         ),
-        url('./img/img21.jpg');
+        url('../../images/img21.jpg');
     }
   }
   @media screen and (min-width: 1280px) {
@@ -47,7 +46,7 @@
           rgba(25, 38, 38, 0.5),
           rgba(25, 38, 38, 0.5)
         ),
-        url('./img/img24.jpg');
+        url('../../images/img24.jpg');
     }
   }
 }
@@ -154,7 +153,7 @@
     line-height: 1.66;
   }
   @media screen and (min-width: 1280px) {
-      margin-left: 40px;
+    margin-left: 40px;
   }
 }
 .our-services2 > .services:first-child {
