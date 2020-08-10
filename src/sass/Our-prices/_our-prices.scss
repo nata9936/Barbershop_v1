@@ -19,7 +19,7 @@
         rgba(25, 38, 38, 0.5),
         rgba(25, 38, 38, 0.5)
       ),
-      url('./img/img19.jpg');
+      url('../images/img19.jpg');
   }
   @media screen and (min-width: 768px) {
     @media screen and (min-device-pixel-ratio: 2),
@@ -32,7 +32,7 @@
           rgba(25, 38, 38, 0.5),
           rgba(25, 38, 38, 0.5)
         ),
-        url('./img/img21.jpg');
+        url('../images/img22.jpg');
     }
   }
   @media screen and (min-width: 1280px) {
@@ -46,7 +46,7 @@
           rgba(25, 38, 38, 0.5),
           rgba(25, 38, 38, 0.5)
         ),
-        url('./img/img24.jpg');
+        url('../images/img23.jpg');
     }
   }
 }
