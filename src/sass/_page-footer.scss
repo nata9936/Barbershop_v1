@@ -35,6 +35,9 @@ img {
 /* Footer */
 .footer {
   background-color: #191c26;
+  @media screen and(min-width:480px) {
+    margin-top: 650px;
+  }
 }
 
 .footer-container {
@@ -146,8 +149,8 @@ textarea {
 
 /* Right container */
 
-.right-container {
-}
+// .right-container {
+// }
 
 .overlay {
   margin-left: auto;
