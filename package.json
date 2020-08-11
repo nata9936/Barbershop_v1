@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://nata9936.github.io/Barbershop_v1",
+  "homepage": "https://github.com/nata9936/Barbershop_v1",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url=/parcel-project-template/",
+    "predeploy": "npm run build -- --public-url=/Barbershop_v1/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
